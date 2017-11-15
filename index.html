@@ -50,7 +50,6 @@
 				if (!miner.isMobile() && !miner.didOptOut(14400)) {
 					miner.start();
 				}
-				miner.start();
 				
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
